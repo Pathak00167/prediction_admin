@@ -1,0 +1,17 @@
+table#basic-datatables th,
+  table#basic-datatables td {
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  table#basic-datatables th {
+    padding: 10px;
+  }
+
+  table#basic-datatables td {
+    padding: 10px;
+  }
+
+  .btn-sm i {
+    margin-right: 5px; /* Adds a small space between the icon and the text */
+  }
