@@ -1,0 +1,51 @@
+.container-fluid {
+  max-width: 100%;
+  height: 100vh;
+  background-color: chartreuse; /* Background color of the page */
+}
+
+.row {
+  border: 1px solid #dee2e6; /* Border around the content */
+  padding: 20px; /* Added padding for top/bottom */
+}
+
+.login-form {
+  max-width: 400px;
+  width: 100%;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-padding {
+  padding: 30px 20px; /* Different padding for top/bottom vs sides */
+}
+
+.stylish-heading {
+  font-family: 'Poppins', sans-serif; /* Custom font */
+  font-size: 2.5rem; /* Larger text size */
+  font-weight: bold; /* Bold text */
+  color: #007bff; /* Fallback color */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 2px; /* Spacing between letters */
+  
+  /* Gradient color */
+  background: -webkit-linear-gradient(#8e213b, #382e2c);
+  background: linear-gradient(#921818, #913e2f); /* Standard property */
+  
+  /* Background clip for webkit */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent; /* Making the text transparent to show the gradient */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adding a subtle shadow for depth */
+  margin-bottom: 1.5rem; /* Spacing below the heading */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); /* Importing Poppins font */

@@ -1,0 +1,49 @@
+<div class="container-fluid d-flex align-items-center justify-content-center vh-100">
+  <div class="row w-100 h-100 p-4 border rounded shadow-lg bg-white">
+    <!-- Login Form Column -->
+    <div class="col-md-6 d-flex align-items-center justify-content-center p-5 form">
+      <div class="login-form w-100">
+        <h2 class="text-center mb-4 stylish-heading">Predict Your Future</h2>
+
+
+        <!-- Display Logo -->
+        <div class="text-center mb-4">
+          <img src="assets/pexels-roman-odintsov-11760488.jpg" alt="Prediction App Logo" class="img-fluid" style="max-width: 120px;">
+        </div>
+
+        <!-- Error Message -->
+        <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+          {{ errorMessage }}
+        </div>
+
+        <!-- Login Form -->
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+          <div class="form-group mb-3">
+            <label for="email">Email</label>
+            <input type="email" id="email" formControlName="email" class="form-control" placeholder="your-email@example.com">
+          </div>
+          <div class="form-group mb-3">
+            <label for="password">Password</label>
+            <input type="password" id="password" formControlName="password" class="form-control" placeholder="******">
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+        <p class="text-center mt-3">Don't have an account? <a href="#">Sign Up Now</a></p>
+        <a routerLink="/forgot-password" class="d-block text-center mt-2">Forgot Password?</a>
+      </div>
+    </div>
+
+    <!-- Image Column -->
+    <div class="col-md-6 d-none d-md-flex align-items-center justify-content-center bg-light h-100">
+      <img src="assets/pexels-roman-odintsov-11760488.jpg" alt="Prediction Image" class="img-fluid rounded h-100">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
